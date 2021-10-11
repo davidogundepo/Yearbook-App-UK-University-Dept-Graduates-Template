@@ -31,7 +31,7 @@ String exitAppSubtitle = "Do you really really want to?";
 String exitAppNo = "Oh No";
 String exitAppYes = "I Have To";
 
-String imgAsset = "assets/images/uni_studs_1.jpg";
+String imgAsset = "assets/images/thrown_uni_1.jpg";
 
 
 Color gradientColor = Color.fromRGBO(162, 78, 124, 1);

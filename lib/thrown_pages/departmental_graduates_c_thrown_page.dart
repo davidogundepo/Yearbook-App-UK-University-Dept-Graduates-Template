@@ -34,7 +34,7 @@ String aboutUniversity = "About $universityName 2021";
 String acronymMeanings = "Acronym Meanings";
 String aboutApp = "About App";
 
-String imgAsset = "assets/images/uni_studs_9.jpg";
+String imgAsset = "assets/images/thrown_uni_6.jpg";
 
 
 Color backgroundColor = Color.fromRGBO(95, 72, 86, 1);
@@ -51,8 +51,6 @@ Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
 Color dialogBackgroundColor = Color.fromRGBO(95, 72, 86, 1);
 Color borderColor = Colors.black;
-
-var writeSearch = List<String>();
 
 
 class MyDepartmentalGraduatesPageC extends StatefulWidget with NavigationStates {
@@ -325,7 +323,8 @@ class _MyDepartmentalGraduatesPageCState extends State<MyDepartmentalGraduatesPa
                                             ),
                                           ),
                                           onTap: () {
-                                            navigateToWhoWeArePage(context);
+                                          Navigator.of(context).pop(false);
+                                          navigateToWhoWeArePage(context);
                                           }
                                       ),
                                       ListTile(
@@ -335,6 +334,7 @@ class _MyDepartmentalGraduatesPageCState extends State<MyDepartmentalGraduatesPa
                                             color: textColor,
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutDepartment(context);
                                         },
                                       ),
@@ -345,6 +345,7 @@ class _MyDepartmentalGraduatesPageCState extends State<MyDepartmentalGraduatesPa
                                             color: textColor,
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutUniversityState(context);
                                         },
                                       ),
@@ -356,7 +357,8 @@ class _MyDepartmentalGraduatesPageCState extends State<MyDepartmentalGraduatesPa
                                               color: textColor,
                                             ),),
                                           onTap: () {
-                                            navigateToAcronymsMeaningsPage(context);
+                                          Navigator.of(context).pop(false);
+                                          navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
                                       ListTile(
@@ -366,6 +368,7 @@ class _MyDepartmentalGraduatesPageCState extends State<MyDepartmentalGraduatesPa
                                             color: textColor,
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -401,7 +404,7 @@ class _MyDepartmentalGraduatesPageCState extends State<MyDepartmentalGraduatesPa
                       child: Text(
                           thrownName,
                           textAlign: TextAlign.center,
-                          style: GoogleFonts.amaticSC(
+                          style: GoogleFonts.abel(
                               color: textColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold

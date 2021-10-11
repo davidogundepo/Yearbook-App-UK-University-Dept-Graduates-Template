@@ -35,7 +35,7 @@ String aboutUniversity = "About $universityName 2021";
 String acronymMeanings = "Acronym Meanings";
 String aboutApp = "About App";
 
-String imgAsset = "assets/images/uni_studs_7.jpg";
+String imgAsset = "assets/images/thrown_uni_3.jpg";
 
 
 Color backgroundColor = Color.fromRGBO(123, 176, 182, 1);
@@ -262,6 +262,7 @@ class _MyDepartmentalExecutivesPageState extends State<MyDepartmentalExecutivesP
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -273,6 +274,7 @@ class _MyDepartmentalExecutivesPageState extends State<MyDepartmentalExecutivesP
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutDepartment(context);
                                         },
                                       ),
@@ -284,6 +286,7 @@ class _MyDepartmentalExecutivesPageState extends State<MyDepartmentalExecutivesP
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutUniversityState(context);
                                         },
                                       ),
@@ -295,7 +298,8 @@ class _MyDepartmentalExecutivesPageState extends State<MyDepartmentalExecutivesP
                                                 color: textColor
                                             ),),
                                           onTap: () {
-                                            navigateToAcronymsMeaningsPage(context);
+                                          Navigator.of(context).pop(false);
+                                          navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
                                       ListTile(
@@ -306,6 +310,7 @@ class _MyDepartmentalExecutivesPageState extends State<MyDepartmentalExecutivesP
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -340,7 +345,7 @@ class _MyDepartmentalExecutivesPageState extends State<MyDepartmentalExecutivesP
                         heightFactor: 0.6,
                         child: Text(
                             thrownName,
-                            style: GoogleFonts.amaticSC(
+                            style: GoogleFonts.abel(
                                 color: textColor,
                                 fontSize: 26.0,
                                 fontWeight: FontWeight.bold

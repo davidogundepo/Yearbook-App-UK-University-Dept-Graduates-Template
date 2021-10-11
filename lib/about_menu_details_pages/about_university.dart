@@ -31,10 +31,10 @@ String whyUniversity = "WHY $universityName?".toUpperCase();
 String whyUniversityStatement = "$universityName scheme was created in a bid to reconstruct, reconcile and rebuild the country after the British Civil war.";
 String staffBody = "$universityName Staff Body all over Nigeria\n\n";
 String staffBodyStatement = "We have 454 Academic Staff in $universityName.";
-String populationChart = "$universityName 2019/2021 Population Chart";
+String populationChart = "$universityName 2020/2021 Population Chart";
 String studentBody = "Students of $universityName\n\n";
 String studentBodyStatement = "We currently have 6,263 students in $universityName.\n36,541 male students and 21,523 female students have graduated from $universityName, since the inception, 12th July 1993.";
-String studentPopulationChart = "$universityName 2019/2021 Student Population Chart";
+String studentPopulationChart = "$universityName 2020/2021 Student Population Chart since Inception";
 
 String universityDepartments = "Some Departments $universityName have running B.Sc, M.Sc. and Ph.D programs provided to it's Student Body\n\n";
 String someDepartments1 = "1. Civil Engineering\n";
@@ -467,27 +467,34 @@ class _AboutUniversityState extends State<AboutUniversityState> {
                                 )),
                           ),
                           PieChart(
-                            legendStyle: TextStyle(
-                              color: containerTextColor,
-                            ),
                             dataMap: universityMap,
-                            animationDuration: Duration(seconds: 10),
-                            chartLegendSpacing: 42.0,
+                            animationDuration: Duration(milliseconds: 8000),
+                            chartLegendSpacing: 42,
                             chartRadius: MediaQuery.of(context).size.width / 2.7,
-                            showChartValuesInPercentage: false,
-                            showChartValues: true,
-                            showChartValuesOutside: false,
-                            chartValueBackgroundColor: containerTextColor,
                             colorList: universityColorList,
-                            showLegends: true,
-                            legendPosition: LegendPosition.right,
-                            decimalPlaces: 0,
-                            showChartValueLabel: true,
-                            initialAngle: 0,
-                            chartValueStyle: defaultChartValueStyle.copyWith(
-                              color: chartTextColor,
-                            ),
+                            initialAngleInDegree: 0,
                             chartType: ChartType.disc,
+                            legendOptions: LegendOptions(
+                              showLegendsInRow: false,
+                              legendPosition: LegendPosition.right,
+                              showLegends: true,
+                              legendShape: BoxShape.circle,
+                              legendTextStyle: TextStyle(
+                                color: cardTextColor,
+                              ),
+                            ),
+                            chartValuesOptions: ChartValuesOptions(
+                              showChartValueBackground: true,
+                              showChartValues: true,
+                              // showChartValueLabel: true,
+                              chartValueStyle: defaultChartValueStyle.copyWith(
+                                color: chartTextColor,
+                              ),
+                              showChartValuesInPercentage: false,
+                              showChartValuesOutside: false,
+                              decimalPlaces: 0,
+                              chartValueBackgroundColor: containerTextColor,
+                            ),
                           ),
                         ],
                       ),
@@ -562,36 +569,51 @@ class _AboutUniversityState extends State<AboutUniversityState> {
                         children: <Widget>[
                           Padding(
                             padding: const EdgeInsets.only(top: 15, bottom: 30, left: 10),
-                            child: Text(studentPopulationChart,
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  color: containerTextColor,
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.bold,
-                                )),
+                            child: RichText(
+                              textAlign: TextAlign.justify,
+                              text:TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                      text: studentPopulationChart,
+                                      style: TextStyle(
+                                        color: containerTextColor,
+                                        fontSize: 19,
+                                        fontWeight: FontWeight.bold,
+                                      )
+                                  ),
+                                ],
+                              ),
+                            ),
                           ),
                           PieChart(
-                            legendStyle: TextStyle(
-                              color: containerTextColor,
-                            ),
                             dataMap: universityStudentMap,
-                            animationDuration: Duration(seconds: 10),
-                            chartLegendSpacing: 42.0,
+                            animationDuration: Duration(milliseconds: 8000),
+                            chartLegendSpacing: 12,
                             chartRadius: MediaQuery.of(context).size.width / 2.7,
-                            showChartValuesInPercentage: false,
-                            showChartValues: true,
-                            showChartValuesOutside: false,
-                            chartValueBackgroundColor: chartBackgroundColor,
                             colorList: universityStudentColorList,
-                            showLegends: true,
-                            legendPosition: LegendPosition.right,
-                            decimalPlaces: 0,
-                            showChartValueLabel: true,
-                            initialAngle: 0,
-                            chartValueStyle: defaultChartValueStyle.copyWith(
-                              color: chartTextColorTwo.withAlpha(160),
+                            initialAngleInDegree: 0,
+                            chartType: ChartType.disc,
+                            legendOptions: LegendOptions(
+                              showLegendsInRow: false,
+                              legendPosition: LegendPosition.bottom,
+                              showLegends: true,
+                              legendShape: BoxShape.circle,
+                              legendTextStyle: TextStyle(
+                                color: cardTextColor,
+                              ),
                             ),
-                            chartType: ChartType.ring,
+                            chartValuesOptions: ChartValuesOptions(
+                              showChartValueBackground: true,
+                              showChartValues: true,
+                              // showChartValueLabel: true,
+                              chartValueStyle: defaultChartValueStyle.copyWith(
+                                color: chartTextColorTwo.withAlpha(160),
+                              ),
+                              showChartValuesInPercentage: false,
+                              showChartValuesOutside: false,
+                              decimalPlaces: 0,
+                              chartValueBackgroundColor: chartBackgroundColor,
+                            ),
                           ),
                         ],
                       ),

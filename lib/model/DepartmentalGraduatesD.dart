@@ -37,19 +37,19 @@ class DepartmentalGraduatesD {
 
     highSchool = data['high_school'];
     college = data['college'];
-    whyCourseOfStudy = data['why_course_of_study'];
+    whyCourseOfStudy = data['why_this_course'];
     highSchoolGraduationYear = data['high_school_graduation_year'];
     collegeGraduationYear = data['college_graduation_year'];
     linkedIn = data['linkedIn'];
     whatsNext = data['whats_next'];
     constituentCountry = data['constituent_country'];
     regionFrom = data['region_from'];
-    favouriteCourse = data['favourite_course'];
+    favouriteCourse = data['fav_subject'];
     departmentExecutive = data['department_executive'];
     departmentExecutivePosition = data['department_executive_position'];
-    favouriteLocationOnCampus = data['favourite_location_in_campus'];
-    favoriteSportOnCampus = data['favorite_sport_in_campus'];
-    favoriteSchoolActivity = data['favorite_school_activity'];
+    favouriteLocationOnCampus = data['fav_place_in_campus'];
+    favoriteSportOnCampus = data['fav_sport_in_campus'];
+    favoriteSchoolActivity = data['fav_school_activity'];
     id = data['id'];
     autoBio = data['autobio'];
     bestMoment = data['best_moment'];

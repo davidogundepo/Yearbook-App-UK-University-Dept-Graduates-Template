@@ -21,8 +21,8 @@ String mailSECOND = "?subject=Hello ";
 String urlTwitter = "https://twitter.com/";
 String urlFacebook = "https://facebook.com/";
 String urlInstagram = "https://www.instagram.com/";
-String urlSnapchat = "https://www.snapchat.com/";
-String urlTikTok = "https://www.tiktok.com/";
+String urlSnapchat = "https://www.snapchat.com/add/";
+String urlTikTok = "https://www.tiktok.com/@";
 String urlLinkedIn = "https://www.linkedin.com/";
 
 
@@ -170,7 +170,8 @@ class _MyDepartmentalGraduatesDetailsPageBState extends State<MyDepartmentalGrad
     if(await canLaunch(url)) {
       await launch(url);
     } else{
-      print("Can't Launch $url");
+      ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: new Text("The required App not installed")));
     }
   }
 
@@ -683,10 +684,10 @@ class _MyDepartmentalGraduatesDetailsPageBState extends State<MyDepartmentalGrad
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitter, color: iconTextColorTwo),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColor,
+                              color: iconTextColorTwo,
                               fontSize: 18,
                               fontWeight: FontWeight.w300
                           )
@@ -716,7 +717,7 @@ class _MyDepartmentalGraduatesDetailsPageBState extends State<MyDepartmentalGrad
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -747,11 +748,11 @@ class _MyDepartmentalGraduatesDetailsPageBState extends State<MyDepartmentalGrad
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.instagram,
-                        color: iconTextColor,
+                        color: iconTextColorTwo,
                       ),
                       label: Text(instagramButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColor,
+                              color: iconTextColorTwo,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
@@ -997,7 +998,7 @@ class _MyDepartmentalGraduatesDetailsPageBState extends State<MyDepartmentalGrad
                       elevation: 2,
                       color: buttonColor,
                       icon: new Icon(
-                        MdiIcons.linkedinBox,
+                        MdiIcons.linkedin,
                         color: iconTextColorTwo,
                       ),
                       label: Text(
@@ -1028,7 +1029,7 @@ class _MyDepartmentalGraduatesDetailsPageBState extends State<MyDepartmentalGrad
                         elevation: 2,
                         color: buttonColor,
                         icon: new Icon(
-                          MdiIcons.linkedinBox,
+                          MdiIcons.linkedin,
                           color: iconTextColorTwo,
                         ),
                         label: Text(

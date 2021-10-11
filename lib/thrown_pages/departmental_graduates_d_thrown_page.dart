@@ -35,7 +35,7 @@ String aboutUniversity = "About $universityName 2021";
 String acronymMeanings = "Acronym Meanings";
 String aboutApp = "About App";
 
-String imgAsset = "assets/images/uni_studs_4.jpg";
+String imgAsset = "assets/images/thrown_uni_5.jpg";
 
 
 Color backgroundColor = Color.fromRGBO(212, 88, 68, 1);
@@ -62,7 +62,6 @@ class MyDepartmentalGraduatesPageD extends StatefulWidget with NavigationStates 
 
 class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPageD> {
 
-
   bool _isVisible = true;
 
   void showToast() {
@@ -70,8 +69,6 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
       _isVisible = !_isVisible;
     });
   }
-
-
 
   Widget _buildProductItem(BuildContext context, int index) {
     DepartmentalGraduatesDNotifier departmentalGraduatesDNotifier = Provider.of<DepartmentalGraduatesDNotifier>(context);
@@ -317,7 +314,8 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                                                 color: textColor
                                             ),),
                                           onTap: () {
-                                            navigateToWhoWeArePage(context);
+                                          Navigator.of(context).pop(false);
+                                          navigateToWhoWeArePage(context);
                                           }
                                       ),
                                       ListTile(
@@ -327,6 +325,7 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutDepartment(context);
                                         },
                                       ),
@@ -337,6 +336,7 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                                               color: textColor
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutUniversityState(context);
                                         },
                                       ),
@@ -347,7 +347,8 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                                                 color: textColor
                                             ),),
                                           onTap: () {
-                                            navigateToAcronymsMeaningsPage(context);
+                                          Navigator.of(context).pop(false);
+                                          navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
                                       ListTile(
@@ -357,6 +358,7 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                                             color: textColor,
                                           ),),
                                         onTap: () {
+                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -391,7 +393,7 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                       heightFactor: 0.6,
                       child: Text(
                           thrownName,
-                          style: GoogleFonts.amaticSC(
+                          style: GoogleFonts.abel(
                               color: textColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold
