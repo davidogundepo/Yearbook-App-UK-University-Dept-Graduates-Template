@@ -221,7 +221,7 @@ class MyDepartmentalStaffSearch extends SearchDelegate {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 10),
                                       child: Text(
-                                          search[position].positionEnforcing,
+                                          search[position].staffPosition,
                                           style: GoogleFonts.varela(
                                               color: textColor,
                                               fontStyle: FontStyle.italic

@@ -27,8 +27,8 @@ String urlTikTok = "https://www.tiktok.com/@";
 String urlLinkedIn = "https://www.linkedin.com/";
 
 
-String departmentName = "Criminology Department";
-String courseDepartmentName = "Criminology";
+String departmentName = "Architecture Department";
+String courseDepartmentName = "Architecture";
 
 String reachDetails = "Contacts";
 String autoBioDetails = "AutoBiography";

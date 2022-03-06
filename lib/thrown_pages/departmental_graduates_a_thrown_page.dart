@@ -21,12 +21,12 @@ import 'package:provider/provider.dart';
 
 
 String universityName = "AAB University";
-String departmentName = "Criminology Department";
+String departmentName = "Architecture Department";
 String postcode = "CV1 7XZ";
 String city = "Coventry";
 String stateName = "West Midlands";
 String countryName = "The UK";
-String thrownName = "Criminology Graduates Class A";
+String thrownName = "Architecture Graduates Class A";
 
 String exitAppStatement = "Exit from App";
 String exitAppTitle = "Come on!";

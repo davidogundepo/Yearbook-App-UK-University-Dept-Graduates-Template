@@ -8,7 +8,7 @@ import 'package:pie_chart/pie_chart.dart';
 import 'package:provider/provider.dart';
 
 
-String departmentName = "Criminology Department";
+String departmentName = "Architecture Department";
 String aboutDepartment = "About $departmentName";
 
 String visionSwipe = "Swipe left on 'OUR VISION STATEMENT'  >>>";
@@ -25,7 +25,7 @@ String cvStatement4 = "4. We create a social atmosphere for students and we beli
 
 String whyDepartmentGroup = "WHY $departmentName?".toUpperCase();
 String whyDepartmentGroupStatement = "$departmentName was established on the 3rd of October 1974 out of the vision and passion of President David OLUDEPO to empower today’s youth for tomorrows challenges.\n\nWe offer students (both domestic and international) the opportunity to earn an unparalleled high-quality educational experience. With passionate and  qualified teaching staff, a clean and caring school atmosphere, and the resources to supply students with the skills necessary for their continued personal success, our school looks to help students to realize their potential.";
-String departmentBody = "Criminology Department\n\n";
+String departmentBody = "Architecture Department\n\n";
 String departmentBodyStatement = "We currently have 54 students in $departmentName, 31 male students and 22 female students. 13 students have graduated from $departmentName.";
 String departmentPopulationChart = "$departmentName Students Population Chart";
 
@@ -74,8 +74,8 @@ class _AboutDepartment extends State<AboutDepartment> {
     AchievementsNotifier achievementsNotifier = Provider.of<AchievementsNotifier>(context, listen: false);
     getAchievements(achievementsNotifier);
 
-    departmentStudentsMap.putIfAbsent("Male Students", () => 31);
-    departmentStudentsMap.putIfAbsent("Female Students", () => 22);
+    departmentStudentsMap.putIfAbsent("Current Male Students", () => 31);
+    departmentStudentsMap.putIfAbsent("Current Female Students", () => 22);
 
     super.initState();
   }
@@ -393,7 +393,7 @@ class _AboutDepartment extends State<AboutDepartment> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 250,
+                height: 350,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -422,14 +422,14 @@ class _AboutDepartment extends State<AboutDepartment> {
                           PieChart(
                             dataMap: departmentStudentsMap,
                             animationDuration: Duration(milliseconds: 8000),
-                            chartLegendSpacing: 42,
+                            chartLegendSpacing: 22,
                             chartRadius: MediaQuery.of(context).size.width / 2.7,
                             colorList: departmentStudentsColorList,
                             initialAngleInDegree: 0,
                             chartType: ChartType.disc,
                             legendOptions: LegendOptions(
                               showLegendsInRow: false,
-                              legendPosition: LegendPosition.right,
+                              legendPosition: LegendPosition.bottom,
                               showLegends: true,
                               legendShape: BoxShape.circle,
                               legendTextStyle: TextStyle(

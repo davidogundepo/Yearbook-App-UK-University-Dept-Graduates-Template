@@ -14,14 +14,14 @@ import 'package:shimmer/shimmer.dart';
 import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../sidebar/menu_item.dart';
 
-String departmentName = "Criminology Department";
-String title = "Criminology Department".toUpperCase();
+String departmentName = "Architecture Department";
+String title = "Architecture Department".toUpperCase();
 String subtitle = "AAB University";
 
-String departmentTitleA = "Criminology Graduates Class A";
-String departmentTitleB = "Criminology Graduates Class B";
-String departmentTitleC = "Criminology Graduates Class C";
-String departmentTitleD = "Criminology Graduates Class D";
+String departmentTitleA = "Architecture Graduates Class A";
+String departmentTitleB = "Architecture Graduates Class B";
+String departmentTitleC = "Architecture Graduates Class C";
+String departmentTitleD = "Architecture Graduates Class D";
 String executiveMembers = "Executive Class Members";
 String staffMembers = "Departmental Staff Officials";
 

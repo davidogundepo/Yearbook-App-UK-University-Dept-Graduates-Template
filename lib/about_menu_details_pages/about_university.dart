@@ -440,7 +440,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 250,
+                height: 350,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -469,14 +469,14 @@ class _AboutUniversityState extends State<AboutUniversityState> {
                           PieChart(
                             dataMap: universityMap,
                             animationDuration: Duration(milliseconds: 8000),
-                            chartLegendSpacing: 42,
+                            chartLegendSpacing: 22,
                             chartRadius: MediaQuery.of(context).size.width / 2.7,
                             colorList: universityColorList,
                             initialAngleInDegree: 0,
                             chartType: ChartType.disc,
                             legendOptions: LegendOptions(
                               showLegendsInRow: false,
-                              legendPosition: LegendPosition.right,
+                              legendPosition: LegendPosition.bottom,
                               showLegends: true,
                               legendShape: BoxShape.circle,
                               legendTextStyle: TextStyle(
@@ -551,7 +551,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 270,
+                height: 310,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)

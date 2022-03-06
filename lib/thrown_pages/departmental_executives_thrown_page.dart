@@ -19,7 +19,7 @@ import 'package:provider/provider.dart';
 
 
 String universityName = "AAB University";
-String departmentName = "Criminology Department";
+String departmentName = "Architecture Department";
 String thrownName = "Executive Class Members";
 
 String exitAppStatement = "Exit from App";

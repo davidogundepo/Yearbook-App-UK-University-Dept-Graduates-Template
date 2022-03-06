@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-String departmentName = "Criminology Department";
+String departmentName = "Architecture Department";
 String title = "About App";
 String imageAboutApp = "assets/images/uni_studs_5.jpg";
 String universityAlmanac = "$departmentName Almanac, 2021";

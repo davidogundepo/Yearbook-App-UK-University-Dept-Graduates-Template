@@ -18,7 +18,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:provider/provider.dart';
 
 String universityName = "AAB University";
-String departmentName = "Criminology Department";
+String departmentName = "Architecture Department";
 String thrownName = "Departmental Staff";
 
 String exitAppStatement = "Exit from App";
