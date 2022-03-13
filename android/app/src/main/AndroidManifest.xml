@@ -22,7 +22,7 @@
     </queries>
 
     <application
-        android:label="UK University ALMANAC Template"
+        android:label="UK University"
        android:icon="@mipmap/ic_launcher"
        android:extractNativeLibs="true"
        android:name="${applicationName}"
@@ -31,6 +31,7 @@
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
+            android:exported="true"
             android:theme="@style/NormalTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
