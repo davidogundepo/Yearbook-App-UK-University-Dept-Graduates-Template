@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-String universityName = "AAB University";
+String universityName = "Coventry University";
 String acronymTitle = "Acronym Meanings";
 String acronym = "The following acronyms are used in the apps and their meanings are detailed.";
 String icdat = "ICDAT - I Can Do All Things";

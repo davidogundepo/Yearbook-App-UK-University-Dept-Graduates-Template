@@ -10,21 +10,25 @@ import 'package:pie_chart/pie_chart.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-String universityName = "AAB University";
+String universityName = "Coventry University";
 String aboutUniversity = "About $universityName";
 
 String visionSwipe = "Swipe left on 'OUR VISION STATEMENT'  >>>";
 String visionTitle = "OUR VISION STATEMENT";
-String visionStatement = "To develop a sound and result oriented organization that is strongly committed to its set objectives particularly those of national unity and even development. An organization that is well motivated and capable of bringing out the best qualities in our youths and imparting in them the right attitude and values for nation-building. An organization that serves as a catalyst to national development, and a source of pride and fulfillment to its participating graduate youths";
+String visionStatement = "A global Education Group with a reputation for equity and innovation that empowers students and communities to transform their lives and society through teaching, learning, research and enterprise.";
 String missionTitle = "OUR MISSION STATEMENT";
-String missionStatement = "To build a pragmatic organization that is committed to its set objectives with the ultimate goal of producing future leadership with positive national ethos-Leadership that is vibrant, proud and committed to the unity and even development of the Nigeria State.\n\nTo be at the fore front of National development efforts, as well as serve as a profitable platform for imparting in our youths values of nationalism, patriotism, loyalty and accountable leadership.\n\nTo raise the moral tone of our youths by giving them opportunity to learn about high ideals of national achievement, social and cultural improvement.\n\nTo develop in our youths attitude of mind acquired through shared experience, and suitable training which would make them more amenable to mobilization in the national interest.\n\nTo ensure British youths acquire the spirit of self-reliance, a reliable source of economic empowerment and effective participation in nation building.\n\nTo develop an organization that is alive to its responsibilities and responsive to the needs of the country.";
+String missionStatement = "Creating Better Futures embodies our purpose, defining the diverse nature of Coventry University Group, from delivering inclusive and impactful global education for our learners, to addressing societal challenges through our research and innovation.";
+String strategyTitle = "OUR 2030 GROUP STRATEGY STATEMENT";
+String strategyStatement = "Our Strategy is about who we are, why we’re here and how we want to create better futures for our students, colleagues, partners and stakeholders. Driven by our mission vision and values, we will deliver against our four strategy themes – Education and Student Experience; Research and Impact; Enterprise and Innovation; and Global University.";
+String civicRoleTitle = "OUR 2030 GROUP STRATEGY STATEMENT";
+String civicRoleStatement = "OUR 2030 GROUP STRATEGY STATEMENT";
 
 String coreValues = "OUR CORE VALUES";
-String cvStatement1 = "1. Patriotism\n\n";
-String cvStatement2 = "2. Integrity\n\n";
-String cvStatement3 = "3. Efficiency\n\n";
-String cvStatement4 = "4. Commitment\n\n";
-String cvStatement5 = "5. Team Work\n\n";
+String cvStatement1 = "1. Collaboration\n\n";
+String cvStatement2 = "2. Determination\n\n";
+String cvStatement3 = "3. Diversity and inclusion\n\n";
+String cvStatement4 = "4. Innovation\n\n";
+String cvStatement5 = "5. Integrity\n\n";
 
 
 String whyUniversity = "WHY $universityName?".toUpperCase();
@@ -63,27 +67,27 @@ double currentAndPastMaleStudentPopulation = 36541;
 double currentAndPastFemaleStudentPopulation = 21523;
 
 
-Color backgroundColor = Color.fromRGBO(25, 59, 111, 1);
-Color appBarBackgroundColor = Color.fromRGBO(25, 49, 111, 1);
-Color appBarIconColor = Colors.blueGrey;
-Color appBarBackgroundTextColor = Colors.blueGrey;
-Color cardBackgroundColor = Color.fromRGBO(25, 49, 111, 1);
-Color textColor = Color.fromRGBO(25, 49, 111, 1);
-Color cardTextColor = Colors.blueGrey;
-Color materialColor = Colors.transparent;
-Color materialInkWellColor = Colors.blue.withAlpha(80);
-Color materialTextColor = Colors.blueGrey;
-Color containerColor = Colors.blueGrey.withAlpha(50);
-Color containerTextColor = Colors.white.withAlpha(110);
-Color containerColor2 = Colors.blueGrey;
-Color chartBackgroundColor = Colors.grey[200];
-Color chartTextColor = Colors.white;
-Color chartTextColorTwo = Color.fromRGBO(25, 49, 111, 1);
-Color firstCurrentUniversityChartColor = Colors.white.withAlpha(110);
-Color secondCurrentUniversityChartColor = Color.fromRGBO(25, 49, 111, 1);
-Color thirdCurrentUniversityChartColor = Colors.lightBlue;
-Color firstCurrentAndPastUniversityStudentsChartColor = Color.fromRGBO(25, 49, 111, 1);
-Color secondCurrentAndPastUniversityStudentsChartColor = Color.fromRGBO(184, 186, 181, 1);
+Color backgroundColor = Color.fromRGBO(198, 99, 99, 1.0);
+Color appBarBackgroundColor = Color.fromRGBO(198, 99, 99, 1.0);
+Color appBarIconColor = Colors.white;
+Color appBarBackgroundTextColor = Colors.white;
+Color cardBackgroundColor = Color.fromRGBO(171, 80, 80, 1.0);
+Color textColor = Colors.white;
+Color cardTextColor = Colors.white;
+Color materialColor = Color.fromRGBO(148, 61, 61, 1.0).withAlpha(50);
+Color materialInkWellColor = Colors.white.withAlpha(80);
+Color materialTextColor = Colors.white;
+Color containerColor = Color.fromRGBO(148, 61, 61, 1.0).withAlpha(50);
+Color containerTextColor = Colors.white;
+Color containerColor2 = Color.fromRGBO(148, 61, 61, 1.0);
+Color chartBackgroundColor = Colors.white;
+Color chartTextColor = Color.fromRGBO(148, 61, 61, 1.0);
+Color chartTextColorTwo = Color.fromRGBO(198, 99, 99, 1.0);
+Color firstCurrentUniversityChartColor = Color.fromRGBO(198, 99, 99, 1.0);
+Color secondCurrentUniversityChartColor = Color.fromRGBO(148, 61, 61, 1.0);
+Color thirdCurrentUniversityChartColor = Colors.white.withAlpha(80);
+Color firstCurrentAndPastUniversityStudentsChartColor = Color.fromRGBO(198, 99, 99, 1.0);
+Color secondCurrentAndPastUniversityStudentsChartColor = Color.fromRGBO(148, 61, 61, 1.0);
 
 class AboutUniversityState extends StatefulWidget {
 
@@ -440,7 +444,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 350,
+                height: 380,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -457,7 +461,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(top: 15, bottom: 30, left: 10),
+                            padding: const EdgeInsets.only(top: 15, bottom: 30, left: 10, right: 10),
                             child: Text(populationChart,
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
@@ -551,7 +555,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 310,
+                height: 350,
                 decoration: BoxDecoration(
                     color: containerColor,
                     borderRadius: new BorderRadius.circular(10)
@@ -607,7 +611,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
                               showChartValues: true,
                               // showChartValueLabel: true,
                               chartValueStyle: defaultChartValueStyle.copyWith(
-                                color: chartTextColorTwo.withAlpha(160),
+                                color: chartTextColorTwo,
                               ),
                               showChartValuesInPercentage: false,
                               showChartValuesOutside: false,
@@ -776,6 +780,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: universityArialNotifier.universityArialList.length,
@@ -862,6 +867,7 @@ class _AboutUniversityState extends State<AboutUniversityState> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: universityAchievementsNotifier.universityAchievementsList.length,
@@ -973,12 +979,12 @@ Map<String, double> universityMap = Map();
 Map<String, double> universityStudentMap = Map();
 
 List<Color> universityColorList = [
-  containerTextColor,
+  firstCurrentUniversityChartColor,
   secondCurrentUniversityChartColor,
   thirdCurrentUniversityChartColor,
 ];
 
 List<Color> universityStudentColorList = [
+  firstCurrentAndPastUniversityStudentsChartColor,
   secondCurrentAndPastUniversityStudentsChartColor.withAlpha(160),
-  secondCurrentAndPastUniversityStudentsChartColor,
 ];

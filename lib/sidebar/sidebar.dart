@@ -16,7 +16,7 @@ import '../sidebar/menu_item.dart';
 
 String departmentName = "Architecture Department";
 String title = "Architecture Department".toUpperCase();
-String subtitle = "AAB University";
+String subtitle = "Coventry University";
 
 String departmentTitleA = "Architecture Graduates Class A";
 String departmentTitleB = "Architecture Graduates Class B";
@@ -34,25 +34,25 @@ String exitAppYes = "I Have To";
 String imgAsset = "assets/images/thrown_uni_1.jpg";
 
 
-Color gradientColor = Color.fromRGBO(162, 78, 124, 1);
-Color gradientColorTwo = Color.fromRGBO(162, 92, 124, 1);
-Color linearGradientColor = Color.fromRGBO(162, 92, 124, 1);
-Color linearGradientColorTwo = Color.fromRGBO(162, 92, 124, 1);
-Color boxShadowColor = Color.fromRGBO(162, 92, 124, 1);
+Color gradientColor = Color.fromRGBO(24, 107, 148, 1.0);
+Color gradientColorTwo = Color.fromRGBO(24, 107, 148, 1.0);
+Color linearGradientColor = Color.fromRGBO(24, 107, 148, 1.0);
+Color linearGradientColorTwo = Color.fromRGBO(24, 107, 148, 1.0);
+Color boxShadowColor = Color.fromRGBO(24, 107, 148, 1.0);
 Color dividerColor = Colors.white;
 Color materialBackgroundColor = Colors.transparent;
 Color shimmerBaseColor = Colors.white;
-Color shimmerHighlightColor = Color.fromRGBO(162, 30, 124, 1);
+Color shimmerHighlightColor = Color.fromRGBO(24, 107, 148, 1.0);
 Color shapeDecorationTextColor = Colors.white;
-Color cardColor = Color.fromRGBO(162, 92, 124, 1);
-Color shapeDecorationTextColorTwo = Color.fromRGBO(162, 30, 124, 1);
-Color containerBackgroundColor = Color.fromRGBO(162, 30, 124, 1);
-Color containerBackgroundColorTwo = Color.fromRGBO(162, 78, 124, 1);
+Color cardColor = Color.fromRGBO(24, 107, 148, 1.0);
+Color shapeDecorationTextColorTwo = Color.fromRGBO(24, 107, 148, 1.0);
+Color containerBackgroundColor = Color.fromRGBO(92, 155, 186, 1.0);
+Color containerBackgroundColorTwo = Color.fromRGBO(24, 107, 148, 1.0);
 Color containerIconColor = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(162, 78, 124, 1);
+Color dialogBackgroundColor = Color.fromRGBO(24, 107, 148, 1.0);
 Color dialogTextColor = Colors.white;
-Color splashColor = Color.fromRGBO(162, 92, 124, 1);
-Color splashColorTwo = Color.fromRGBO(162, 30, 124, 1);
+Color splashColor = Color.fromRGBO(24, 107, 148, 1.0);
+Color splashColorTwo = Color.fromRGBO(24, 107, 148, 1.0);
 
 
 class SideBar extends StatefulWidget {
@@ -311,7 +311,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: MenuItem(
-                                    icon: MdiIcons.accountGroup,
+                                    icon: MdiIcons.pillar,
                                     title: executiveMembers,
                                   ),
                                 ),
@@ -329,7 +329,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: MenuItem(
-                                    icon: MdiIcons.accountGroup,
+                                    icon: MdiIcons.pillar,
                                     title: staffMembers,
                                   ),
                                 ),

@@ -18,7 +18,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:provider/provider.dart';
 
 
-String universityName = "AAB University";
+String universityName = "Coventry University";
 String departmentName = "Architecture Department";
 String thrownName = "Architecture Graduates Class C";
 
@@ -37,19 +37,19 @@ String aboutApp = "About App";
 String imgAsset = "assets/images/thrown_uni_6.jpg";
 
 
-Color backgroundColor = Color.fromRGBO(95, 72, 86, 1);
+Color backgroundColor = Color.fromRGBO(0, 103, 120, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(95, 62, 86, 1);
+Color appBarBackgroundColor = Color.fromRGBO(0, 103, 120, 1);
 Color appBarIconColor = Colors.white;
-Color modalColor = Color.fromRGBO(95, 62, 86, 1);
+Color modalColor = Color.fromRGBO(0, 103, 120, 1);
 Color modalBackgroundColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(95, 32, 86, 1);
+Color splashColor = Color.fromRGBO(0, 103, 120, 1);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(95, 72, 86, 1);
+Color dialogBackgroundColor = Color.fromRGBO(0, 103, 120, 1);
 Color borderColor = Colors.black;
 
 

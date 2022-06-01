@@ -17,7 +17,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:provider/provider.dart';
 
-String universityName = "AAB University";
+String universityName = "Coventry University";
 String departmentName = "Architecture Department";
 String thrownName = "Departmental Staff";
 
@@ -38,18 +38,18 @@ String imgAsset = "assets/images/thrown_mgmt_1.jpg";
 
 
 
-Color backgroundColor = Color.fromRGBO(167, 129, 29, 1);
+Color backgroundColor = Color.fromRGBO(52, 76, 183, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(167, 119, 29, 1);
+Color appBarBackgroundColor = Color.fromRGBO(52, 76, 183, 1);
 Color appBarIconColor = Colors.white;
-Color modalColor = Color.fromRGBO(167, 119, 29, 1);
+Color modalColor = Color.fromRGBO(52, 76, 183, 1);
 Color modalBackgroundColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(167, 119, 29, 1);
+Color splashColor = Color.fromRGBO(52, 76, 183, 1);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
-Color dialogBackgroundColor = Color.fromRGBO(167, 129, 29, 1);
+Color dialogBackgroundColor = Color.fromRGBO(52, 76, 183, 1);
 Color borderColor = Colors.black;
 
 

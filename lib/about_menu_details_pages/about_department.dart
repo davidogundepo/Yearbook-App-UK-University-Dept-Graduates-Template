@@ -36,22 +36,22 @@ double maleDepartmentStudentsPopulation = 31;
 double femaleDepartmentStudentsPopulation = 22;
 
 
-Color backgroundColor = Colors.blueGrey[900];
-Color appBarBackgroundColor = Colors.blueGrey[800];
-Color appBarIconColor = Colors.blueGrey;
-Color appBarBackgroundTextColor = Colors.blueGrey;
-Color cardBackgroundColor = Colors.black38;
-Color cardTextColor = Colors.blueGrey;
+Color backgroundColor = Color.fromRGBO(0, 103, 120, 1);
+Color appBarBackgroundColor = Color.fromRGBO(0, 103, 120, 1);
+Color appBarIconColor = Colors.white70;
+Color appBarBackgroundTextColor = Colors.white70;
+Color cardBackgroundColor = Color.fromRGBO(2, 87, 102, 1.0);
+Color cardTextColor = Colors.white70;
 Color materialColor = Colors.transparent;
-Color materialInkWellColor = Colors.blueGrey;
-Color materialTextColor = Colors.blueGrey;
-Color containerColor = Colors.blueGrey.withAlpha(50);
-Color containerTextColor = Colors.blueGrey[900];
-Color containerColor2 = Colors.blueGrey;
-Color chartBackgroundColor = Colors.blueGrey[200];
-Color chartTextColor = Colors.blueGrey[900].withOpacity(0.9);
-Color firstDepartmentStudentsChartColor = Color.fromRGBO(145, 172, 179, 1).withAlpha(160);
-Color secondDepartmentStudentsChartColor = Color.fromRGBO(184, 186, 181, 1);
+Color materialInkWellColor = Colors.white70;
+Color materialTextColor = Colors.white70;
+Color containerColor = Colors.white70.withAlpha(50);
+Color containerTextColor = Colors.white70;
+Color containerColor2 = Color.fromRGBO(30, 143, 160, 1.0);
+Color chartBackgroundColor = Color.fromRGBO(45, 167, 186, 1.0);
+Color chartTextColor = Color.fromRGBO(0, 103, 120, 1).withOpacity(0.9);
+Color firstDepartmentStudentsChartColor = Color.fromRGBO(45, 167, 186, 1.0).withAlpha(160);
+Color secondDepartmentStudentsChartColor = Colors.white70;
 
 class AboutDepartment extends StatefulWidget {
 
@@ -500,6 +500,7 @@ class _AboutDepartment extends State<AboutDepartment> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: achievementsNotifier.achievementsList.length,

@@ -46,8 +46,8 @@ String tikTokButton = "My TikTok";
 
 String autobiographyTitle = "Autobiography\n";
 String nicknameTitle = "My Nickname\n";
-String bestMomentTitle = "Best Moment in AAB University\n";
-String worstMomentTitle = "Worst Moment in AAB University\n";
+String bestMomentTitle = "Best Moment in Coventry University\n";
+String worstMomentTitle = "Worst Moment in Coventry University\n";
 String whyCourseOfStudyTitle = "Why study $courseDepartmentName\n";
 String favouriteCourseTitle = "Favourite Course\n";
 String favouriteLocationOnCampusTitle = "Favourite Place on Campus\n";
@@ -82,20 +82,20 @@ String facebookProfileSharedPreferencesButtonTwo = "Lol, No";
 
 
 
-Color backgroundColor = Color.fromRGBO(95, 72, 86, 1);
+Color backgroundColor = Color.fromRGBO(0, 103, 120, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(95, 62, 86, 1);
+Color appBarBackgroundColor = Color.fromRGBO(0, 103, 120, 1);
 Color appBarIconColor = Colors.white;
 Color materialBackgroundColor = Colors.transparent;
-Color shapeDecorationColor = Color.fromRGBO(95, 62, 86, 1);
-Color shapeDecorationTextColor = Color.fromRGBO(95, 62, 86, 1);
+Color shapeDecorationColor = Color.fromRGBO(0, 103, 120, 1);
+Color shapeDecorationTextColor = Color.fromRGBO(0, 103, 120, 1);
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(95, 62, 86, 1);
-Color splashColorTwo = Color.fromRGBO(95, 62, 86, 1);
-Color iconTextColor = Color.fromRGBO(95, 72, 86, 1);
+Color splashColor = Color.fromRGBO(0, 103, 120, 1);
+Color splashColorTwo = Color.fromRGBO(0, 103, 120, 1);
+Color iconTextColor = Color.fromRGBO(0, 103, 120, 1);
 Color iconTextColorTwo = Colors.white;
-Color buttonColor = Color.fromRGBO(95, 62, 86, 1);
-Color textColor = Color.fromRGBO(95, 62, 86, 1);
+Color buttonColor = Color.fromRGBO(0, 103, 120, 1);
+Color textColor = Color.fromRGBO(0, 103, 120, 1);
 Color confettiColorOne = Colors.green;
 Color confettiColorTwo = Colors.blue;
 Color confettiColorThree = Colors.pink;

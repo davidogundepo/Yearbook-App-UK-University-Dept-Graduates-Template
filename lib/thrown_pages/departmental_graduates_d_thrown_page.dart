@@ -18,7 +18,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:provider/provider.dart';
 
 
-String universityName = "AAB University";
+String universityName = "Coventry University";
 String departmentName = "Architecture Department";
 String thrownName = "Architecture Graduates Class D";
 
@@ -38,20 +38,20 @@ String aboutApp = "About App";
 String imgAsset = "assets/images/thrown_uni_5.jpg";
 
 
-Color backgroundColor = Color.fromRGBO(212, 88, 68, 1);
+Color backgroundColor = Color.fromRGBO(152, 109, 142, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(212, 78, 68, 1);
+Color appBarBackgroundColor = Color.fromRGBO(152, 109, 142, 1);
 Color appBarIconColor = Colors.white;
-Color modalColor = Color.fromRGBO(212, 78, 68, 1);
+Color modalColor = Color.fromRGBO(152, 109, 142, 1);
 Color modalBackgroundColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(212, 78, 68, 1);
+Color splashColor = Color.fromRGBO(152, 109, 142, 1);
 Color splashColorTwo = Colors.black87;
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(212, 88, 68, 1);
+Color dialogBackgroundColor = Color.fromRGBO(152, 109, 142, 1);
 Color borderColor = Colors.black;
 
 
@@ -282,7 +282,6 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
       child: Scaffold(
         body: Container(
           color: backgroundColor,
-
           child: NestedScrollView(
             headerSliverBuilder: (BuildContext context,
                 bool innerBoxIsScrolled) {
@@ -416,8 +415,7 @@ class _MyDepartmentalGraduatesPageDState extends State<MyDepartmentalGraduatesPa
                 ),
                 child: ListView.builder(
                   itemBuilder: _buildProductItem,
-                  itemCount: departmentalGraduatesDNotifier.departmentalGraduatesDList.length,
-
+                  itemCount: departmentalGraduatesDNotifier.departmentalGraduatesDList.length
                 ),
               ),
             ),

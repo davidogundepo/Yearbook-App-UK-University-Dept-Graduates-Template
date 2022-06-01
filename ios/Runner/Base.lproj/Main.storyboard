@@ -18,7 +18,7 @@
                     <view key="view" contentMode="scaleToFill" id="2i5-Tm-E2q">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.11864350057451874" green="0.58859276155973739" blue="0.88297358247422686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.2470588088" green="0.47843140360000003" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hI6-YD-eUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
